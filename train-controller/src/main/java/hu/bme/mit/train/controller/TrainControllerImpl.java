@@ -16,7 +16,8 @@ public class TrainControllerImpl implements TrainController {
 
 		@Override
 		public void run() {
-			while (true) {
+			int a = 0;
+			while (a++ < 9999999) {
 				followSpeed();
 				try {
 					Thread.sleep(1000);
