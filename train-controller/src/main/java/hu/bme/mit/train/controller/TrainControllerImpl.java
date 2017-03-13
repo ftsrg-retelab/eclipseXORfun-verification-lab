@@ -20,7 +20,7 @@ public class TrainControllerImpl implements TrainController {
 			while (a++ < 9999999) {
 				followSpeed();
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(3000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
