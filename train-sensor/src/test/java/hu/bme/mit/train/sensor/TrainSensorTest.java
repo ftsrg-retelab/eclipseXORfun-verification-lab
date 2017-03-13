@@ -38,6 +38,7 @@ public class TrainSensorTest {
 
     @Test
     public void overrideSpeedLimit_HighDiff_UserAlarmTrue() {
+        when(trainController.getReferenceSpeed()).thenReturn(100);
         trainSensor.overrideSpeedLimit(400);
         verify(trainUser, times(1)).setAlarmState(true);
         reset(trainUser);
